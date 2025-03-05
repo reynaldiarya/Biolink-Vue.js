@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Facebook",
+    "icon": "fa-brands fa-facebook",
+    "url": "https://www.facebook.com/"
+  },
+  {
+    "name": "Instagram",
+    "icon": "fa-brands fa-instagram",
+    "url": "https://www.instagram.com/"
+  },
+  {
+    "name": "Twitter",
+    "icon": "fa-brands fa-twitter",
+    "url": "https://twitter.com/"
+  },
+  {
+    "name": "Telegram",
+    "icon": "fa-brands fa-telegram",
+    "url": "https://telegram.me/"
+  }
+]
