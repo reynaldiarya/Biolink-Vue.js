@@ -10,13 +10,18 @@
     "url": "https://www.instagram.com/"
   },
   {
-    "name": "Twitter",
-    "icon": "fa-brands fa-twitter",
-    "url": "https://twitter.com/"
+    "name": "X / Twitter",
+    "icon": "fa-brands fa-x-twitter",
+    "url": "https://x.com/"
   },
   {
     "name": "Telegram",
     "icon": "fa-brands fa-telegram",
     "url": "https://telegram.me/"
+  },
+  {
+    "name": "Tokopedia",
+    "icon": "fa-solid fa-bag-shopping",
+    "url": "https://www.tokopedia.com/"
   }
 ]
