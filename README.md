@@ -18,19 +18,25 @@
    cd Biolink-Vue.js
    ```
 
-2. **Install dependencies:**
+2. **Select a SPA branch:**
+
+   ```bash
+   git checkout spa
+   ```
+
+4. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-3. **Run the development server:**
+5. **Run the development server:**
 
    ```bash
    npm run dev
    ```
 
-4. **Build for production:**
+6. **Build for production:**
 
    ```bash
    npm run build
