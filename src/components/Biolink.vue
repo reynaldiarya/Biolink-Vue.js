@@ -11,7 +11,7 @@
                 </a>
             </li>
         </ul>
-        <p class="w-full text-center pt-12">Made with ♥ in Tulungagung</p>
+        <p class="fixed bottom-0 w-full text-center pb-4">Made with ♥ in Tulungagung</p>
     </div>
 </template>
 
