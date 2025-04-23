@@ -39,7 +39,7 @@
 ## 🌿 Available Branches
 
 - `main`: Main branch with a single-page structure.
-- `spa`: Branch with a multi-page SPA (Single Page Application) implementation/
+- `spa`: Branch with a multi-page SPA (Single Page Application) implementation.
 
 ## 📁 Project Structure
 
