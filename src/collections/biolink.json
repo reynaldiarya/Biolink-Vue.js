@@ -1,27 +1,39 @@
 [
   {
-    "name": "Facebook",
-    "icon": "fa-brands fa-facebook",
-    "url": "https://www.facebook.com/"
+    "name": "Social Media",
+    "slug": "social-media",
+    "links": [
+      {
+        "name": "Facebook",
+        "icon": "fa-brands fa-facebook",
+        "url": "https://www.facebook.com/"
+      },
+      {
+        "name": "Instagram",
+        "icon": "fa-brands fa-instagram",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "name": "X / Twitter",
+        "icon": "fa-brands fa-x-twitter",
+        "url": "https://x.com/"
+      },
+      {
+        "name": "Telegram",
+        "icon": "fa-brands fa-telegram",
+        "url": "https://telegram.me/"
+      }
+    ]
   },
   {
-    "name": "Instagram",
-    "icon": "fa-brands fa-instagram",
-    "url": "https://www.instagram.com/"
-  },
-  {
-    "name": "X / Twitter",
-    "icon": "fa-brands fa-x-twitter",
-    "url": "https://x.com/"
-  },
-  {
-    "name": "Telegram",
-    "icon": "fa-brands fa-telegram",
-    "url": "https://telegram.me/"
-  },
-  {
-    "name": "Tokopedia",
-    "icon": "fa-solid fa-bag-shopping",
-    "url": "https://www.tokopedia.com/"
+    "name": "Online Shop",
+    "slug": "online-shop",
+    "links": [
+      {
+        "name": "Tokopedia",
+        "icon": "fa-solid fa-bag-shopping",
+        "url": "https://www.tokopedia.com/"
+      }
+    ]
   }
 ]

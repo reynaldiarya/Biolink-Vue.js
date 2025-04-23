@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import { createApp } from "vue";
 import App from "./App.vue";
+import router from './router';
 
 library.add(faFacebook, faInstagram, faXTwitter, faTelegram, faBagShopping);
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+createApp(App).component("font-awesome-icon", FontAwesomeIcon).use(router).mount("#app");
