@@ -7,6 +7,18 @@ version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
+    target-branch: "main"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+  
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "multi-page-spa"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
