@@ -10,30 +10,33 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed } from 'vue';
 
-const props = withDefaults(defineProps<{
-  url?: string
-  to?: string | object
-  icon?: string
-}>(), {
-  url: '',
-  to: '',
-  icon: ''
-})
+const props = withDefaults(
+  defineProps<{
+    url?: string;
+    to?: string | object;
+    icon?: string;
+  }>(),
+  {
+    url: '',
+    to: '',
+    icon: '',
+  }
+);
 
-const isExternal = computed(() => !!props.url)
+const isExternal = computed(() => !!props.url);
 
 const linkProps = computed(() => {
   if (isExternal.value) {
     return {
       href: props.url,
       target: '_blank',
-      rel: 'noopener noreferrer'
-    }
+      rel: 'noopener noreferrer',
+    };
   }
   return {
-    to: props.to
-  }
-})
+    to: props.to,
+  };
+});
 </script>

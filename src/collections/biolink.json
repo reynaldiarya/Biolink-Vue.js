@@ -2,6 +2,7 @@
   {
     "name": "Social Media",
     "slug": "social-media",
+    "icon": "fa-solid fa-share-nodes",
     "links": [
       {
         "name": "Facebook",
@@ -28,6 +29,7 @@
   {
     "name": "Online Shop",
     "slug": "online-shop",
+    "icon": "fa-solid fa-store",
     "links": [
       {
         "name": "Tokopedia",

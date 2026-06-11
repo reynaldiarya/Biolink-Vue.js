@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 @theme {
-  --font-display: "Open Sans", "sans-serif";
+  --font-display: 'Open Sans', 'sans-serif';
 }
