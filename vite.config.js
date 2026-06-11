@@ -12,13 +12,12 @@ function preloadProfilePicture() {
     transformIndexHtml(html) {
       const jsonPath = fileURLToPath(new URL('./src/collections/biolink.json', import.meta.url));
       const data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
-      
-      return html
-        .replace(
-          '<!-- preload-profile-picture -->',
-          `<link rel="preload" as="image" href="${data.profile.logo}" fetchpriority="high" />`
-        )
-    }
+
+      return html.replace(
+        '<!-- preload-profile-picture -->',
+        `<link rel="preload" as="image" href="${data.profile.logo}" fetchpriority="high" />`
+      );
+    },
   };
 }
 
