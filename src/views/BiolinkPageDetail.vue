@@ -4,7 +4,7 @@
     class="min-h-screen flex flex-col items-center justify-center font-display bg-gray-100 px-4 pt-16 pb-8"
   >
     <img
-      src="/assets/images/logo.png"
+      :src="profile.logo"
       class="w-32 h-32 rounded-full mb-6"
       alt="Avatar"
       loading="eager"
@@ -21,7 +21,7 @@
     <router-link to="/" class="text-sm text-gray-700 mt-6 hover:underline">
       ← Return to main page
     </router-link>
-    <p class="w-full text-center pt-12">Made with ♥ in Tulungagung</p>
+    <p class="w-full text-center pt-12">{{ profile.footer }}</p>
   </div>
   <div
     v-else
@@ -45,7 +45,8 @@ import data from '@/collections/biolink.json';
 import LinkButton from '@/components/LinkButton.vue';
 
 const route = useRoute();
+const profile = data.profile;
 const biolink = computed(() => {
-  return data.find((item) => item.slug === route.params.slug);
+  return data.links.find((item) => item.slug === route.params.slug);
 });
 </script>
