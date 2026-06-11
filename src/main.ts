@@ -6,9 +6,17 @@ import {
   faXTwitter,
   faTelegram,
   faSteam,
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import { faBagShopping, faShareNodes, faStore } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import {
+  faBagShopping,
+  faStore,
+  faArrowLeft,
+  faShareNodes,
+  faCertificate,
+  faCheck,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon, FontAwesomeLayers } from '@fortawesome/vue-fontawesome';
 import { createApp } from 'vue';
 
 import App from './App.vue';
@@ -17,11 +25,19 @@ import router from './router';
 library.add(
   faFacebook,
   faInstagram,
-  faXTwitter,
   faTelegram,
   faSteam,
+  faYoutube,
+  faXTwitter,
   faBagShopping,
+  faStore,
+  faArrowLeft,
   faShareNodes,
-  faStore
+  faCertificate,
+  faCheck
 );
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app');
+createApp(App)
+  .component('font-awesome-icon', FontAwesomeIcon)
+  .component('font-awesome-layers', FontAwesomeLayers)
+  .use(router)
+  .mount('#app');

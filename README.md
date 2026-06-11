@@ -3,7 +3,7 @@
 A lightweight, highly customizable biolink profile page built with Vue 3, TypeScript, and Tailwind CSS.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" />
+  <img src="https://img.shields.io/badge/version-1.0.2-blue.svg" />
   <img src="https://img.shields.io/badge/Vue.js-3.x-4FC08D.svg" />
   <img src="https://img.shields.io/badge/TypeScript-Ready-3178C6.svg" />
   <img src="https://img.shields.io/badge/TailwindCSS-4.x-38B2AC.svg" />
@@ -19,9 +19,12 @@ Biolink Vue offers a sleek and fast solution for managing personal or brand prof
 ## Features
 
 - **Multi-page & Single-page Support** - Organize your links into categories (slugs) or just use direct external links.
+- **Media Embed Support** - Easily embed YouTube videos, Spotify songs, SoundCloud tracks, TikToks, and Instagram posts directly in your biolink.
 - **Centralized Link Management** - Update all profile links dynamically through a single JSON configuration file.
 - **Responsive Design** - Deliver a seamless browsing experience across mobile and desktop interfaces using Tailwind CSS 4.
-- **High Performance & Type Safety** - Built with Vue 3 Composition API, Vite, and TypeScript.
+- **Instant Loading & Clean UI** - Minimalist aesthetic with absolutely zero forced entrance animations for lightning-fast loads.
+- **Dynamic SEO** - Automatically updates the document title based on the profile name and active category.
+- **High Performance & Type Safety** - Built with Vue 3 Composition API, Vite, and strict TypeScript types.
 - **Integrated Iconography** - Utilize built-in FontAwesome support for precise brand representation across social links.
 
 ## Tech Stack
@@ -109,8 +112,9 @@ To update the profile image, replace the `logo.png` file located in the `public/
 │   └── assets/images/       # Static assets including the profile image
 ├── src/
 │   ├── collections/         # JSON data files for dynamic content (biolink.json)
-│   ├── components/          # Reusable UI components (LinkButton.vue)
+│   ├── components/          # Reusable UI components (LinkButton.vue, MediaEmbed.vue, ProfileHeader.vue, ProfileFooter.vue)
 │   ├── router/              # Vue Router configuration
+│   ├── types/               # TypeScript interfaces (index.ts, BiolinkItem.ts, ProfileData.ts)
 │   ├── views/               # Page views (Biolink.vue, BiolinkPageDetail.vue)
 │   ├── App.vue              # Main application layout
 │   └── main.ts              # Application entry point
