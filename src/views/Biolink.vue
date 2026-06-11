@@ -5,23 +5,21 @@
         <h1 class="text-3xl font-semibold mb-12 text-center">Your Name</h1>
         <ul class="space-y-4 w-full max-w-xl">
             <li v-for="(link, index) in links" :key="index">
-                <a :href="link.url" target="_blank" rel="noopener noreferrer"
-                    class="flex items-center justify-center w-full text-center px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 shadow-md">
-                    <font-awesome-icon :icon="link.icon" class="mr-2" /> {{ link.name }}
-                </a>
+                <LinkButton v-if="link.slug" :to="link.slug" :icon="link.icon">
+                    {{ link.name }}
+                </LinkButton>
+                <LinkButton v-else-if="link.url" :url="link.url" :icon="link.icon">
+                    {{ link.name }}
+                </LinkButton>
             </li>
         </ul>
         <p class="w-full text-center pt-12">Made with ♥ in Tulungagung</p>
     </div>
 </template>
 
+<script setup lang="ts">
+import biolink from '@/collections/biolink.json'
+import LinkButton from '@/components/LinkButton.vue'
 
-<script>
-import biolink from '@/collections/biolink.json'; export default {
-    data() {
-        return {
-            links: biolink,
-        };
-    },
-};
+const links = biolink
 </script>
