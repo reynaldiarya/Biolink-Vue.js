@@ -3,7 +3,7 @@
 A lightweight, highly customizable biolink profile page built with Vue 3, TypeScript, and Tailwind CSS.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" />
+  <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" />
   <img src="https://img.shields.io/badge/Vue.js-3.x-4FC08D.svg" />
   <img src="https://img.shields.io/badge/TypeScript-Ready-3178C6.svg" />
   <img src="https://img.shields.io/badge/TailwindCSS-4.x-38B2AC.svg" />
